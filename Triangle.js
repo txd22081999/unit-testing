@@ -27,10 +27,6 @@ class Triangle {
     const BC = Point.getDistance(pointB, pointC);
     const CA = Point.getDistance(pointA, pointC);
 
-    console.log(AB);
-    console.log(BC);
-    console.log(CA);
-
     return AB + BC + CA;
   };
 }

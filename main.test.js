@@ -40,14 +40,12 @@ describe('Test chức năng tính khoảng cách giữa 2 điểm', () => {
     const pointA = new Point(1, 2);
     const pointB = new Point(5, 3);
     const distance = Point.getDistance(pointA, pointB);
-    console.log(distance);
     expect(distance).toBe(Math.sqrt(17));
   });
   test('Khoảng cách giữa A(4,-2) và B(-1,2) bằng sqrt(41)', () => {
     const pointA = new Point(4, -2);
     const pointB = new Point(-1, 2);
     const distance = Point.getDistance(pointA, pointB);
-    console.log(distance);
     expect(distance).toBe(Math.sqrt(41));
   });
 
@@ -55,17 +53,12 @@ describe('Test chức năng tính khoảng cách giữa 2 điểm', () => {
     const pointA = new Point(45617, 54561);
     const pointB = new Point(47813, 75647);
     const distance = Point.getDistance(pointA, pointB);
-    console.log(distance);
     expect(distance).toBe(Math.sqrt(449441812));
   });
-});
-
-describe('Test chức năng tính khoảng cách giữa 2 điểm (Class Point)', () => {
   test('Khoảng cách giữa A(4.5,9.2) và B(1.3,6.1) bằng 4.45533', () => {
     const pointA = new Point(4.5, 9.2);
     const pointB = new Point(1.3, 6.1);
     const distance = Point.getDistance(pointA, pointB);
-    console.log(distance);
     expect(distance).toBe(Math.sqrt(19.85));
   });
 });
@@ -78,7 +71,6 @@ describe('Test chức năng phân loại tam giác (Class Triangle)', () => {
 
     const triangle = new Triangle([pointA, pointB, pointC]);
     const type = Triangle.getType(triangle);
-    console.log(type);
     expect(type).toBe(TAM_GIAC_CAN);
   });
 
@@ -89,7 +81,6 @@ describe('Test chức năng phân loại tam giác (Class Triangle)', () => {
 
     const triangle = new Triangle([pointA, pointB, pointC]);
     const type = Triangle.getType(triangle);
-    console.log(type);
     expect(type).toBe(KHONG_PHAI_TAM_GIAC);
   });
 
