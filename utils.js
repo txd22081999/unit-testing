@@ -1,6 +1,4 @@
 const triangleClassify = (a, b, c) => {
-  //   const { a, b, c } = triangle;
-  console.log(a, b, c);
   let result = '';
 
   if (a < b + c && b < a + c && c < a + b) {
